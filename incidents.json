@@ -1,0 +1,101 @@
+[
+  {
+    "incident_id": "C7E8CC1E",
+    "timestamp": "2026-07-19T14:31:38.440Z",
+    "location": "Sector A, Row 12",
+    "category": "Medical",
+    "description": "Spectator slipped on staircase. Medical team dispatched.",
+    "reporter_id": "VOL-1049",
+    "urgency_level": "High",
+    "status": "open",
+    "needs_immediate_review": true
+  },
+  {
+    "incident_id": "BB1AA246",
+    "timestamp": "2026-07-19T14:31:46.294Z",
+    "location": "Sector B, Gate 4",
+    "category": "Crowd",
+    "description": "Heavy congestion at ticketing scanners. Diverting arrivals to Gate 5.",
+    "reporter_id": "VOL-0842",
+    "urgency_level": "Medium",
+    "status": "open",
+    "needs_immediate_review": false
+  },
+  {
+    "incident_id": "49745F03",
+    "timestamp": "2026-07-19T20:09:56.372650+05:30",
+    "location": "Sector C, Gate 2",
+    "category": "Safety",
+    "description": "Wet floor near concession stand. Warning sign placed.",
+    "reporter_id": "VOL-0231",
+    "urgency_level": "Low",
+    "status": "open",
+    "needs_immediate_review": false
+  },
+  {
+    "incident_id": "5C7D05A6",
+    "timestamp": "2026-07-19T20:39:37.342639+05:30",
+    "location": "Gate",
+    "category": "Crowd",
+    "description": "We have a crowd congestion issue near Gate 4, please divert arrivals.",
+    "reporter_id": "VOL-1049",
+    "urgency_level": "Medium",
+    "status": "open",
+    "needs_immediate_review": false
+  },
+  {
+    "incident_id": "E360F5F3",
+    "timestamp": "2026-07-19T20:39:37.353965+05:30",
+    "location": "Gate",
+    "category": "Medical",
+    "description": "A spectator slipped on the wet floor in Gate 2 and needs a doctor.",
+    "reporter_id": "VOL-1049",
+    "urgency_level": "Low",
+    "status": "open",
+    "needs_immediate_review": false
+  },
+  {
+    "incident_id": "0FA73F2C",
+    "timestamp": "2026-07-19T20:40:40.320286+05:30",
+    "location": "Section",
+    "category": "Missing Child",
+    "description": "I am in Section 102, I have a missing child case, this is urgent.",
+    "reporter_id": "VOL-1049",
+    "urgency_level": "High",
+    "status": "open",
+    "needs_immediate_review": true
+  },
+  {
+    "incident_id": "BA20C419",
+    "timestamp": "2026-07-19T21:25:34.903089+05:30",
+    "location": "a",
+    "category": "Crowd",
+    "description": "Gate 4 is experiencing high congestion, this is an accessibility issue for a fan in a wheelchair, urgent.",
+    "reporter_id": "VOL-1049",
+    "urgency_level": "High",
+    "status": "open",
+    "needs_immediate_review": true
+  },
+  {
+    "incident_id": "514DA2AD",
+    "timestamp": "2026-07-19T21:30:23.623567+05:30",
+    "location": "Sector D",
+    "category": "Accessibility",
+    "description": "Wheelchair lift stuck on level 2.",
+    "reporter_id": "VOL-0099",
+    "urgency_level": "High",
+    "status": "open",
+    "needs_immediate_review": true
+  },
+  {
+    "incident_id": "97F05766",
+    "timestamp": "2026-07-19T21:30:29.368907+05:30",
+    "location": "Sector D",
+    "category": "Accessibility",
+    "description": "We have an elevator power outage near Sector D.",
+    "reporter_id": "VOL-1049",
+    "urgency_level": "Low",
+    "status": "open",
+    "needs_immediate_review": false
+  }
+]
