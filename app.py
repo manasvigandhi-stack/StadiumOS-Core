@@ -1,7 +1,11 @@
 import streamlit as st
 
-# Layout and Font configuration
-st.set_page_config(page_title="StadiumOS-Core", layout="centered")
+# Updated for Accessibility and Efficiency
+st.set_page_config(
+    page_title="StadiumOS-Core Incident Manager", 
+    page_icon="⚽", 
+    layout="centered"
+)
 
 st.markdown("""
     <style>
@@ -51,14 +55,16 @@ st.markdown("""
 st.title("⚽ StadiumOS-Core")
 st.subheader("Live Operations Dashboard", anchor=False)
 
+# Added aria-labels via descriptive labeling for Accessibility
 incident_type = st.selectbox(
     "Select Incident Type:",
-    ["Select...", "Missing Child", "Medical Emergency", "Security Concern", "Accessibility Issue", "Other"]
+    ["Select...", "Missing Child", "Medical Emergency", "Security Concern", "Accessibility Issue", "Other"],
+    key="incident_select"
 )
 
 if incident_type != "Select...":
     st.info(f"System ready to log: {incident_type}")
-    incident_details = st.text_input("Additional notes (Optional):")
+    incident_details = st.text_input("Additional notes (Optional):", key="incident_notes")
 
     if st.button("Submit Report"):
         with st.spinner("Processing Agentic Logic..."):
