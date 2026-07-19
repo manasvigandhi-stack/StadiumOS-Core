@@ -1,33 +1,43 @@
 import streamlit as st
 
-# FIFA-Inspired Polished Layout
+# Optimized for readability and professional aesthetics
 st.set_page_config(page_title="StadiumOS-Core", layout="centered")
 
 st.markdown("""
     <style>
-    /* Animated Gradient Background - Stadium Night Theme */
+    /* High-Contrast, Professional Background */
     .stApp {
-        background: linear-gradient(-45deg, #004d26, #003366, #1a1a1a, #004d26);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-        height: 100vh;
-    }
-    @keyframes gradient {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
+        background: #f0f2f6; 
+        background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+        background-size: 20px 20px;
     }
     
-    /* Content Card */
+    /* Glassmorphism Card Effect for high readability */
     .main .block-container {
-        background-color: rgba(255, 255, 255, 0.95);
+        background: rgba(255, 255, 255, 1);
         padding: 40px;
-        border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        border-radius: 16px;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     }
     
-    h1 { color: #004d26; text-align: center; }
-    .stButton>button { background-color: #004d26 !important; color: white !important; width: 100%; border-radius: 10px; font-weight: bold; }
+    h1 { color: #004d26; text-align: center; font-weight: 800; }
+    
+    /* Button refinement for better UI */
+    .stButton>button { 
+        background-color: #004d26 !important; 
+        color: #ffffff !important; 
+        width: 100%; 
+        border-radius: 8px; 
+        border: none;
+        padding: 12px;
+        font-weight: 600;
+        transition: transform 0.2s;
+    }
+    .stButton>button:hover { transform: scale(1.02); }
+    
+    /* Text readability check */
+    .stMarkdown, .stSelectbox, .stTextInput { color: #1f2937 !important; }
     </style>
 """, unsafe_allow_html=True)
 
