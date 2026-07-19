@@ -1,43 +1,49 @@
 import streamlit as st
 
-# Optimized for readability and professional aesthetics
+# Layout and Font configuration
 st.set_page_config(page_title="StadiumOS-Core", layout="centered")
 
 st.markdown("""
     <style>
-    /* High-Contrast, Professional Background */
-    .stApp {
-        background: #f0f2f6; 
-        background-image: radial-gradient(#d1d5db 1px, transparent 1px);
-        background-size: 20px 20px;
+    /* Load FIFA-themed font */
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&display=swap');
+
+    /* Background and Card */
+    .stApp { background: #f0f2f6; background-image: radial-gradient(#d1d5db 1px, transparent 1px); background-size: 20px 20px; }
+    .main .block-container { background: #ffffff; padding: 40px; border-radius: 16px; border: 1px solid #e5e7eb; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+
+    /* Title Styling - FIFA Theme */
+    h1 { 
+        font-family: 'Archivo Black', sans-serif !important; 
+        color: #004d26 !important; 
+        text-align: center; 
+        margin-bottom: 0.5rem;
     }
     
-    /* Glassmorphism Card Effect for high readability */
-    .main .block-container {
-        background: rgba(255, 255, 255, 1);
-        padding: 40px;
-        border-radius: 16px;
-        border: 1px solid #e5e7eb;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    /* Subheader - Locked size */
+    h3 { font-size: 1.25rem !important; text-align: center; color: #4b5563; }
+
+    /* Increased Font Size for UI Elements (labels, text) */
+    .stSelectbox label, .stTextInput label, .stMarkdown { 
+        font-size: 1.15rem !important; 
+        font-family: 'Inter', sans-serif !important;
+        color: #1f2937 !important;
     }
-    
-    h1 { color: #004d26; text-align: center; font-weight: 800; }
-    
-    /* Button refinement for better UI */
+
+    /* Input Fields */
+    .stSelectbox, .stTextInput { font-size: 1.1rem !important; }
+
+    /* Button Styling */
     .stButton>button { 
         background-color: #004d26 !important; 
         color: #ffffff !important; 
         width: 100%; 
         border-radius: 8px; 
-        border: none;
-        padding: 12px;
+        padding: 14px !important;
+        font-size: 1.15rem !important;
         font-weight: 600;
-        transition: transform 0.2s;
+        border: none;
     }
-    .stButton>button:hover { transform: scale(1.02); }
-    
-    /* Text readability check */
-    .stMarkdown, .stSelectbox, .stTextInput { color: #1f2937 !important; }
     </style>
 """, unsafe_allow_html=True)
 
